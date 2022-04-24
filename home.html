@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Главная"
-})
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220424182736">
+	<link rel="shortcut icon" href="fox.ico">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/7a3f5d60e3/Practic/style.css?_v=20220424182736">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container header__container_wide">
+				<div class="header__logo">Gerícht</div>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">Home<a href="" class="menu__link"></a></li>
+						<li class="menu__item">Pages<a href="" class="menu__link"></a></li>
+						<li class="menu__item">Contact Us<a href="" class="menu__link"></a></li>
+						<li class="menu__item">Blog<a href="" class="menu__link"></a></li>
+						<li class="menu__item">Landing<a href="" class="menu__link"></a></li>
+					</ul>
+				</nav>
+				<div class="header__reg register">
+					<div class="register__log">Log in / registration</div>
+					<div class="register__book">book table</div>
+				</div>
+
+
+				<div class="header__menu-burger  menu-burger">
+					<button type="button" class="menu-burger__icon icon-menu"><span></span></button>
+					<nav class="menu-burger__body">
+						<ul class="menu-burger__list">
+							<li class="menu-burger__item"><a href="" class="menu-burger__link"></a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+
+
+		</header>
 
 
 		<div class="key">
@@ -26,13 +67,13 @@
 					<div class="gal__wrapper">
 						<div class="gal__swiper">
 							<a class="list list-ibg">
-								<img class="item" src="@img/homeImage/egg.jpg" alt="">
+								<picture><source srcset="img/homeImage/egg.webp" type="image/webp"><img class="item" src="img/homeImage/egg.jpg" alt=""></picture>
 							</a>
 							<a class="list list-ibg">
-								<img class="item" src="@img/homeImage/egg2.jpg" alt="">
+								<picture><source srcset="img/homeImage/egg2.webp" type="image/webp"><img class="item" src="img/homeImage/egg2.jpg" alt=""></picture>
 							</a>
 							<a class="list list-ibg">
-								<img class="item" src="@img/homeImage/egg3.jpg" alt="">
+								<picture><source srcset="img/homeImage/egg3.webp" type="image/webp"><img class="item" src="img/homeImage/egg3.jpg" alt=""></picture>
 							</a>
 						</div>
 					</div>
@@ -51,7 +92,7 @@
 						<div class="G-content__button"> <a href="" class="G-content__a-button">Know More</a></div>
 					</div>
 					<div class="G-content__knife ">
-						<img src="img/homeImage/knife.png" alt="">
+						<picture><source srcset="img/homeImage/knife.webp" type="image/webp"><img src="img/homeImage/knife.png" alt=""></picture>
 					</div>
 					<div class="G-content__text-block G-content__text-block_two">
 						<div class="G-content__title-1 G-content__title-1_two _icon-spoon">Our History</div>
@@ -60,8 +101,7 @@
 							arcu volutpat.
 							Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.
 						</div>
-						<div class="G-content__button G-content__button_two"> <a href=""
-								class="G-content__a-button">Know More</a></div>
+						<div class="G-content__button G-content__button_two"> <a href="" class="G-content__a-button">Know More</a></div>
 					</div>
 				</div>
 			</div>
@@ -76,8 +116,7 @@
 					<h2 class="form-book__title1">Reservations</h2>
 					<h3 class="form-book__title2 _icon-spoon">Book A Table</h3>
 
-					<form data-dev data-popup-massage="#formMessage" method="POST" action="#"
-						class="book-table__form form-book-form">
+					<form data-dev data-popup-massage="#formMessage" method="POST" action="#" class="book-table__form form-book-form">
 						<div class="form-book-form__lines">
 							<div class="form-book-form__line">
 								<select name="form[]" class="form">
@@ -90,8 +129,7 @@
 							<div class="form-book-form__line">
 								<!-- _icon-select-arrow -->
 								<div class="form-book-form_input">
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-										data-required placeholder="12/05/2021" data-calendar class="input-dark form">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required placeholder="12/05/2021" data-calendar class="input-dark form">
 								</div>
 							</div>
 							<div class="form-book-form__line">
@@ -124,10 +162,10 @@
 						<div class="title-cup__title">Desserts Menu</div>
 					</div>
 				</div>
-				<!-- url("../img/cupImage/cup.jpg") -->
+				<!-- url("img/cupImage/cup.jpg") -->
 			</div>
 			<div class="title-cup__bg">
-				<img src="@img/cupImage/cup.jpg" alt="">
+				<picture><source srcset="img/cupImage/cup.webp" type="image/webp"><img src="img/cupImage/cup.jpg" alt=""></picture>
 			</div>
 		</div>
 		<div class="today">
@@ -178,7 +216,7 @@
 						</div>
 					</div>
 					<div class="block-cocktails__image-wrap">
-						<img src="img/homeImage/cocktails.png" alt="" class="block-cocktails-image">
+						<picture><source srcset="img/homeImage/cocktails.webp" type="image/webp"><img src="img/homeImage/cocktails.png" alt="" class="block-cocktails-image"></picture>
 					</div>
 					<div class="block-cocktails__text-menu block-cocktails__text-menu_one ">
 						<div class="block-cocktails__title">Cocktails</div>
@@ -228,7 +266,7 @@
 		<div class="shef">
 			<div class="shef__container">
 				<div class="shef__block-ibg">
-					<img src="img/homeImage/shef.jpg" alt="" class="shef__image">
+					<picture><source srcset="img/homeImage/shef.webp" type="image/webp"><img src="img/homeImage/shef.jpg" alt="" class="shef__image"></picture>
 				</div>
 				<div class="shef__text-block shef-text">
 					<div class="shef-text__title-one">Chef’s Word</div>
@@ -254,7 +292,7 @@
 				<div class="titles-testimony__cards cards">
 					<div class="cards__card">
 						<div class="cards__wrap-img">
-							<img src="img/testimony/Human.jpg" alt="" class="cards__img">
+							<picture><source srcset="img/testimony/Human.webp" type="image/webp"><img src="img/testimony/Human.jpg" alt="" class="cards__img"></picture>
 						</div>
 						<div class="cards__text-content text-testimony">
 							<div class="text-testimony__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit.
@@ -268,7 +306,7 @@
 					</div>
 					<div class="cards__card">
 						<div class="cards__wrap-img">
-							<img src="img/testimony/stas.jpg" alt="" class="cards__img">
+							<picture><source srcset="img/testimony/stas.webp" type="image/webp"><img src="img/testimony/stas.jpg" alt="" class="cards__img"></picture>
 						</div>
 						<div class="cards__text-content text-testimony">
 							<div class="text-testimony__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit.
@@ -282,7 +320,7 @@
 					</div>
 					<div class="cards__card">
 						<div class="cards__wrap-img">
-							<img src="img/testimony/nevzorov.jpg" alt="" class="cards__img">
+							<picture><source srcset="img/testimony/nevzorov.webp" type="image/webp"><img src="img/testimony/nevzorov.jpg" alt="" class="cards__img"></picture>
 						</div>
 						<div class="cards__text-content text-testimony">
 							<div class="text-testimony__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit.
@@ -296,7 +334,7 @@
 					</div>
 					<div class="cards__card">
 						<div class="cards__wrap-img">
-							<img src="img/testimony/jirick.jpg" alt="" class="cards__img">
+							<picture><source srcset="img/testimony/jirick.webp" type="image/webp"><img src="img/testimony/jirick.jpg" alt="" class="cards__img"></picture>
 						</div>
 						<div class="cards__text-content text-testimony">
 							<div class="text-testimony__text">Lorem ipsum dolor sit amet, consectetur adipiscing sit.
@@ -333,7 +371,7 @@
 						</div>
 						<div class="laurels__card card-laurels">
 							<div class="card-laurels__wrap-img">
-								<img class="card-laurels__img" src="img/lourels/one.png" alt="">
+								<picture><source srcset="img/lourels/one.webp" type="image/webp"><img class="card-laurels__img" src="img/lourels/one.png" alt=""></picture>
 							</div>
 							<div class="card-laurels__text-block">
 								<div class="card-laurels__title">Rising Star</div>
@@ -362,11 +400,11 @@
 
 				</div>
 				<div class="card-laurels__img-two-wrap -ibg">
-					<img class="card-laurels__two-img" src="img/medal/food.jpg" alt="">
+					<picture><source srcset="img/medal/food.webp" type="image/webp"><img class="card-laurels__two-img" src="img/medal/food.jpg" alt=""></picture>
 				</div>
 			</div>
 			<div class="laurels__bg">
-				<img class="laurels__img" src="img/lourels/BG.jpg" alt="">
+				<picture><source srcset="img/lourels/BG.webp" type="image/webp"><img class="laurels__img" src="img/lourels/BG.jpg" alt=""></picture>
 			</div>
 		</div>
 
@@ -376,10 +414,24 @@
 
 	</div>
 	</main>
-	@@include('html/_footer.htm',{})
+	<footer class="footer">
+		<div class="footer__container">
+		</div>
+	</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220424182736"></script>
 </body>
 
 </html>
